@@ -20,7 +20,12 @@ namespace VendasWebMVC2
             IMvcBuilder mvcBuilder = services.AddControllersWithViews();
 
             services.AddDbContext<VendasWebMVC2Context>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("VendasWebMVC2Context")));
+                options.UseMySql(
+                    Configuration.GetConnectionString("VendasWebMVC2Context"),
+                    new MySqlServerVersion(new Version(8, 0, 21)), // Coloque a versão do MySQL que você está utilizando
+                    builder => builder.MigrationsAssembly("VendasWebMVC2")));
+
+
         }
 
         public void Configure(WebApplication app, IWebHostEnvironment environment)
