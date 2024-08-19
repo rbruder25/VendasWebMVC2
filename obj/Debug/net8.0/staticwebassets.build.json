@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nhkEK32udkFvOsS1GZwFdfqaQwPIWFAbNPnhLz71sbw=",
+  "Hash": "FdDdGDpxOpg+/Zv+YSh29VkIyxRyb4omkZDAYPo1JkY=",
   "Source": "VendasWebMVC2",
   "BasePath": "_content/VendasWebMVC2",
   "Mode": "Default",
@@ -262,6 +262,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Identity": "C:\\Temp\\Projetos\\VendasWebMVC2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-flatly.css",
+      "SourceId": "VendasWebMVC2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Temp\\Projetos\\VendasWebMVC2\\wwwroot\\",
+      "BasePath": "_content/VendasWebMVC2",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-flatly.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-flatly.css"
     },
     {
       "Identity": "C:\\Temp\\Projetos\\VendasWebMVC2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
