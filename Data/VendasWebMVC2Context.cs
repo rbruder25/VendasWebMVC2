@@ -14,6 +14,8 @@ namespace VendasWebMVC2.Data
         {
         }
 
-        public DbSet<VendasWebMVC2.Models.Departamentos> Departamentos { get; set; } = default!;
+        public DbSet<Departamentos> Departamentos { get; set; } = default!;
+        public DbSet<Vendedores> Vendedores { get; set; }
+        public DbSet<RegistroVendas> RegistroVendas { get; set; }
     }
 }
