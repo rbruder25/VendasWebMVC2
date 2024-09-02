@@ -8,7 +8,7 @@ namespace VendasWebMVC2.Models
         public DateTime Date { get; set; }
         public double Valor { get; set; }
         public StatusValor status { get; set; }
-        public Vendedores Vendedores { get; set; }
+        public Vendedores? Vendedores { get; set; }
 
       
 

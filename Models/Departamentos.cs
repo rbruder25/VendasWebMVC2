@@ -10,7 +10,7 @@ namespace VendasWebMVC2.Models
     public class Departamentos
     {
         public int Id { get; set; }
-        public string Nome { get; set; }
+        public string? Nome { get; set; }
         public ICollection<Vendedores> Vendedores { get; set; } = new List<Vendedores>();
     
         public Departamentos()

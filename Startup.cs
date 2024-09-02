@@ -17,7 +17,7 @@ namespace VendasWebMVC2
 
         public void ConfigureServices(IServiceCollection services)
         {
-            IMvcBuilder mvcBuilder = services.AddControllersWithViews();
+            services.AddControllersWithViews();
 
             services.AddDbContext<VendasWebMVC2Context>(options =>
                 options.UseMySql(
@@ -25,16 +25,24 @@ namespace VendasWebMVC2
                     new MySqlServerVersion(new Version(8, 0, 21)), // Coloque a versão do MySQL que você está utilizando
                     builder => builder.MigrationsAssembly("VendasWebMVC2")));
 
-
+            services.AddScoped<SeedingService>();
         }
 
         public void Configure(WebApplication app, IWebHostEnvironment environment)
         {
-            if (!app.Environment.IsDevelopment())
+            if (!environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
+            }
+            else
+            {
+                // Criando um escopo manualmente para resolver o SeedingService
+                using (var scope = app.Services.CreateScope())
+                {
+                    var seedingService = scope.ServiceProvider.GetRequiredService<SeedingService>();
+                    seedingService.Seed();
+                }
             }
 
             app.UseHttpsRedirection();
@@ -47,42 +55,35 @@ namespace VendasWebMVC2
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
-
-
         }
     }
 
-        public interface IStartup
+    public interface IStartup
+    {
+        IConfiguration Configuration { get; }
+
+        void Configure(WebApplication app, IWebHostEnvironment environment);
+
+        void ConfigureServices(IServiceCollection services);
+    }
+
+    public static class StartupExtensions
+    {
+        public static WebApplicationBuilder UseStartup<TStartup>(this WebApplicationBuilder builder) where TStartup : IStartup
         {
-            IConfiguration Configuration { get; }
+            var startup = Activator.CreateInstance(typeof(TStartup), builder.Configuration) as IStartup;
+            if (startup == null)
+                throw new ArgumentException("Classe startup.cs inválida");
 
-            void Configure(WebApplication app, IWebHostEnvironment inviromennt);
+            startup.ConfigureServices(builder.Services);
 
-            void ConfigureServices(IServiceCollection services);
+            var app = builder.Build();
+
+            startup.Configure(app, app.Environment);
+
+            app.Run();
+
+            return builder;
         }
-
-        public static class StartupExtensions
-        {
-            public static WebApplicationBuilder UseStartup<TStartup>(this WebApplicationBuilder WebappBuilder) where TStartup : IStartup
-            {
-
-
-                var startup = Activator.CreateInstance(typeof(TStartup), WebappBuilder.Configuration) as IStartup;
-                if (startup == null) throw new ArgumentException("classe startup.cs invalida");
-
-
-                startup.ConfigureServices(WebappBuilder.Services);
-
-                var app = WebappBuilder.Build();
-
-                startup.Configure(app, app.Environment);
-
-                app.Run();
-
-            return WebappBuilder;
-
-            }
-        }
-    
+    }
 }
-
