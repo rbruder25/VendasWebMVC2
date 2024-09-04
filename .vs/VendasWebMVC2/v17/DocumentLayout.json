@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Temp\\Projetos\\VendasWebMVC2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E0CFAACD-4375-4C86-91F7-6E84A23B6AD8}|VendasWebMVC2.csproj|c:\\temp\\projetos\\vendaswebmvc2\\views\\vendedores\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E0CFAACD-4375-4C86-91F7-6E84A23B6AD8}|VendasWebMVC2.csproj|solutionrelative:views\\vendedores\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0CFAACD-4375-4C86-91F7-6E84A23B6AD8}|VendasWebMVC2.csproj|c:\\temp\\projetos\\vendaswebmvc2\\services\\servicovendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0CFAACD-4375-4C86-91F7-6E84A23B6AD8}|VendasWebMVC2.csproj|solutionrelative:services\\servicovendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E0CFAACD-4375-4C86-91F7-6E84A23B6AD8}|VendasWebMVC2.csproj|c:\\temp\\projetos\\vendaswebmvc2\\data\\seedingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0CFAACD-4375-4C86-91F7-6E84A23B6AD8}|VendasWebMVC2.csproj|solutionrelative:data\\seedingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,14 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E0CFAACD-4375-4C86-91F7-6E84A23B6AD8}|VendasWebMVC2.csproj|c:\\temp\\projetos\\vendaswebmvc2\\controllers\\vendedorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0CFAACD-4375-4C86-91F7-6E84A23B6AD8}|VendasWebMVC2.csproj|solutionrelative:controllers\\vendedorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0CFAACD-4375-4C86-91F7-6E84A23B6AD8}|VendasWebMVC2.csproj|c:\\temp\\projetos\\vendaswebmvc2\\services\\servicovendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0CFAACD-4375-4C86-91F7-6E84A23B6AD8}|VendasWebMVC2.csproj|solutionrelative:services\\servicovendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0CFAACD-4375-4C86-91F7-6E84A23B6AD8}|VendasWebMVC2.csproj|c:\\temp\\projetos\\vendaswebmvc2\\views\\vendedores\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E0CFAACD-4375-4C86-91F7-6E84A23B6AD8}|VendasWebMVC2.csproj|solutionrelative:views\\vendedores\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0CFAACD-4375-4C86-91F7-6E84A23B6AD8}|VendasWebMVC2.csproj|c:\\temp\\projetos\\vendaswebmvc2\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,7 +62,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "SeedingService.cs",
               "DocumentMoniker": "C:\\Temp\\Projetos\\VendasWebMVC2\\Data\\SeedingService.cs",
               "RelativeDocumentMoniker": "Data\\SeedingService.cs",
@@ -75,33 +75,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Temp\\Projetos\\VendasWebMVC2\\Views\\Vendedores\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Vendedores\\Index.cshtml",
               "ToolTip": "C:\\Temp\\Projetos\\VendasWebMVC2\\Views\\Vendedores\\Index.cshtml",
               "RelativeToolTip": "Views\\Vendedores\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAABCAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADAAAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-03T19:55:45.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ServicoVendedor.cs",
               "DocumentMoniker": "C:\\Temp\\Projetos\\VendasWebMVC2\\Services\\ServicoVendedor.cs",
               "RelativeDocumentMoniker": "Services\\ServicoVendedor.cs",
               "ToolTip": "C:\\Temp\\Projetos\\VendasWebMVC2\\Services\\ServicoVendedor.cs",
               "RelativeToolTip": "Services\\ServicoVendedor.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAA8wBAAAAALAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-03T17:52:37.522Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "VendedoresController.cs",
               "DocumentMoniker": "C:\\Temp\\Projetos\\VendasWebMVC2\\Controllers\\VendedoresController.cs",
               "RelativeDocumentMoniker": "Controllers\\VendedoresController.cs",
@@ -109,12 +109,11 @@
               "RelativeToolTip": "Controllers\\VendedoresController.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAIA4wBEAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T14:20:33.831Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-03T14:20:33.831Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Vendedores.cs",
               "DocumentMoniker": "C:\\Temp\\Projetos\\VendasWebMVC2\\Models\\Vendedores.cs",
               "RelativeDocumentMoniker": "Models\\Vendedores.cs",
@@ -122,8 +121,7 @@
               "RelativeToolTip": "Models\\Vendedores.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAnwBYAAABZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T13:43:29.786Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-03T13:43:29.786Z"
             },
             {
               "$type": "Document",
@@ -135,8 +133,7 @@
               "RelativeToolTip": "Controllers\\VendedeoresController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T13:34:59.395Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-03T13:34:59.395Z"
             },
             {
               "$type": "Document",
@@ -148,8 +145,7 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAA8AAAAAAAAAAAAAABMAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-03T13:14:36.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-03T13:14:36.014Z"
             },
             {
               "$type": "Document",
@@ -161,8 +157,7 @@
               "RelativeToolTip": "Startup.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAArwBwAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T20:07:02.452Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T20:07:02.452Z"
             },
             {
               "$type": "Document",
@@ -174,8 +169,7 @@
               "RelativeToolTip": "Views\\Home\\Contact.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-19T14:14:48.206Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-19T14:14:48.206Z"
             },
             {
               "$type": "Document",
@@ -187,8 +181,7 @@
               "RelativeToolTip": "Migrations\\VendasWebMVC2ContextModelSnapshot.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T19:28:59.558Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-16T19:28:59.558Z"
             },
             {
               "$type": "Document",
@@ -200,8 +193,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-15T18:49:04.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-15T18:49:04.412Z"
             }
           ]
         }
