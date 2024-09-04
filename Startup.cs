@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using VendasWebMVC2.Data;
+using VendasWebMVC2.Services;
 
 namespace VendasWebMVC2
 {
@@ -26,6 +27,7 @@ namespace VendasWebMVC2
                     builder => builder.MigrationsAssembly("VendasWebMVC2")));
 
             services.AddScoped<SeedingService>();
+            services.AddScoped<ServicoVendedor>();
         }
 
         public void Configure(WebApplication app, IWebHostEnvironment environment)

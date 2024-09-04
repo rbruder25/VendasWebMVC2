@@ -26,12 +26,12 @@ namespace VendasWebMVC2.Data
             Departamentos  d4 = new Departamentos(4,"Livraria");
 
 
-            Vendedores v1 = new Vendedores(1, "Antonio Alves", "antonu@gmail.com", new DateTime(1998, 4, 21), 1000.00, d1);
-            Vendedores v2 = new Vendedores(2, "Mario Pedroso", "mario@gmail.com", new DateTime(1988, 5, 23), 2000.00, d2);
-            Vendedores v3 = new Vendedores(3, "Carla Silveira", "carla@gmail.com", new DateTime(1978, 8, 18), 3000.00, d3);
-            Vendedores v4 = new Vendedores(4, "Jose Matheus", "jose@gmail.com", new DateTime(1968, 7, 24), 4000.00, d4);
-            Vendedores v5 = new Vendedores(5, "Alice Menezes", "alice@gmail.com", new DateTime(1967, 6, 22), 1000.00, d1);
-            Vendedores v6 = new Vendedores(6, "Wagner Santiago", "wagnere@gmail.com", new DateTime(1966, 5, 25), 1000.00, d1);
+            Vendedores v1 = new Vendedores(1, "Antonio Alves", "antonu@gmail.com", new DateTime(1998, 4, 21), 1000, d1);
+            Vendedores v2 = new Vendedores(2, "Mario Pedroso", "mario@gmail.com", new DateTime(1988, 5, 23), 2000, d2);
+            Vendedores v3 = new Vendedores(3, "Carla Silveira", "carla@gmail.com", new DateTime(1978, 8, 18), 3000, d3);
+            Vendedores v4 = new Vendedores(4, "Jose Matheus", "jose@gmail.com", new DateTime(1968, 7, 24), 4000, d4);
+            Vendedores v5 = new Vendedores(5, "Alice Menezes", "alice@gmail.com", new DateTime(1967, 6, 22), 1000, d1);
+            Vendedores v6 = new Vendedores(6, "Wagner Santiago", "wagnere@gmail.com", new DateTime(1966, 5, 25), 1000, d1);
 
             RegistroVendas r1 = new RegistroVendas(1, new DateTime(2024, 2, 22), 1500.00, StatusValor.Billed, v1);
             RegistroVendas r2 = new RegistroVendas(2, new DateTime(2024, 2, 23), 1500.00, StatusValor.Billed, v2);

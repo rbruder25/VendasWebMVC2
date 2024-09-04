@@ -9,7 +9,7 @@ namespace VendasWebMVC2.Models
         public string? Nome { get; set; }
         public string? Email { get; set; }
         public DateTime DataNascimento { get; set; }
-        public double Valores { get; set; }
+        public int SalarioBase { get; set; }
         public Departamentos? Departamentos { get; set; }
 
         public ICollection<RegistroVendas> Vendas { get; set; } = new List<RegistroVendas>();
@@ -20,13 +20,13 @@ namespace VendasWebMVC2.Models
 
         }
 
-        public Vendedores(int id, string nome, string email, DateTime dataNascimento, Double  valores, Departamentos departamentos)
+        public Vendedores(int id, string nome, string email, DateTime dataNascimento, int  valores, Departamentos departamentos)
         {
             Id = id;
             Nome = nome;
             Email = email;
             DataNascimento = dataNascimento;
-            Valores = valores;
+            SalarioBase = valores;
             Departamentos = departamentos;
         }
 
